@@ -1,0 +1,20 @@
+%clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+%simple-view-container {
+  @extend %clearfix;
+  overflow: hidden;
+  position: relative;
+  max-width: 38rem;
+  margin: 0 auto;
+}
+
+body {
+  min-width: 1024px;
+  overflow-x: auto;
+}

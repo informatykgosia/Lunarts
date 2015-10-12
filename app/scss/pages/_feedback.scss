@@ -1,0 +1,97 @@
+.no-feedback-container {
+  @extend %simple-view-container;
+  padding-top: 10rem;
+  text-align: center;
+
+  h1, h2 {
+    font-weight: normal;
+  }
+
+  h1 {
+    font-size: $huge-header;
+  }
+
+  h2 {
+    line-height: 1.4;
+  }
+
+  .shortcut-button {
+    margin-top: 4rem;
+  }
+}
+
+.feedback-panel {
+  height: 100%;
+  overflow-y: auto;
+  width: calc(100% - #{$main-nav-collapsed + $feedback-menu + $feedback-submenu + 0.01rem});
+  float: left;
+
+  @media screen and (min-width: $standard-desktop) {
+    width: calc(100% - #{$main-nav-expanded + $feedback-menu + $feedback-submenu + 0.01rem});
+  }
+}
+
+.feedback-container {
+  max-width: 34rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.discussion-thread {
+  padding: 1.5rem 0 0;
+}
+
+.feedback {
+  margin: 0 0 1.5rem;
+  padding: 1.5rem 1rem;
+  width: 100%;
+
+  &.respond {
+    float: right;
+    text-align: right;
+  }
+
+  &.current {
+    background-color: #eee;
+    border-radius: 0.5rem;
+  }
+
+  .user {
+    font-size: $bigger-font;
+    margin: 0 0 0.3rem;
+  }
+
+  time {
+    display: block;
+    color: #777;
+    font-size: 0.8rem;
+  }
+
+  .feedback-content {
+    font-size: $bigger-font;
+
+    p {
+      margin: .5rem 0 0;
+    }
+  }
+}
+
+.respond-form {
+  @extend %clearfix;
+  position: relative;
+  max-width: 32rem;
+  margin: 0 auto 1rem;
+
+  textarea {
+    max-width: 23rem;
+    float: left;
+  }
+
+  input[type="submit"] {
+    max-width: 8rem;
+    position: absolute;
+    margin: 0;
+    right: 0;
+    bottom: 0;
+  }
+}

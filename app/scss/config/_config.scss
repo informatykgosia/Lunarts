@@ -1,0 +1,23 @@
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  position: relative;
+  height: 100%;
+  font-size: 14px;
+
+  @media screen and (min-width: $standard-desktop) {
+    font-size: 16px;
+  }
+  @media screen and (min-width: $big-desktop) {
+    font-size: 18px;
+  }
+}
+
+body {
+  overflow-x: hidden;
+  height: 100%;
+}

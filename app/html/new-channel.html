@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Snipsl</title>
+  <link rel="stylesheet" href="application.css" type="text/css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+</head>
+
+  <body>
+<nav role="navigation">
+      <ul>
+        <li class="nav-item">
+          <a href="#" class="nav-link">
+            <i class="icon fa fa-user"></i>
+            <span class="text">Neil Gaiman</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="feedback-full.html" class="nav-link">
+            <i class="icon fa fa-comments"></i>
+            <span class="text">Feedback</span>
+          </a>
+        </li>
+      </ul>
+
+      <ul>
+        <li class="nav-item nav-group">
+          <span class="text">My Drafts</span>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">
+            <i class="icon fa fa-book"></i>
+            <span class="text">All Drafts</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="new-snipsl.html" class="nav-link big-link">
+            <i class="icon big-icon fa fa-pencil"></i>
+            <span class="text">Write a Snipsl</span>
+          </a>
+        </li>
+      </ul>
+      <ul>
+        <li class="nav-item nav-group">
+          <span class="text">My Channels</span>
+        </li>
+        <li class="nav-item">
+          <a href="channel.html" class="nav-link">
+            <i class="icon fa fa-book"></i>
+            <span class="text">American Gods</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="channel.html" class="nav-link">
+            <i class="icon fa fa-book"></i>
+            <span class="text">Coraline</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="channel.html" class="nav-link">
+            <i class="icon fa fa-book"></i>
+            <span class="text">Stardust</span>
+          </a>
+        </li>
+        <li class="nav-item active">
+          <a href="new-channel.html" class="nav-link active">
+            <i class="icon fa fa-plus"></i>
+            <span class="text">Add new Channel</span>
+          </a>
+        </li>
+      </ul>
+      <ul>
+        <li class="nav-item">
+          <a href="#" class="nav-link">
+            <i class="icon fa fa-cog"></i>
+            <span class="text">Settings</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">
+            <i class="icon fa fa-question-circle"></i>
+            <span class="text">Help</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <section class="new-channel">
+      <form class="create-channel">
+        <h3 class="fieldset-title done">Channel details</h2>
+        <fieldset>
+          <label for="title" class="required">Title</label>
+          <input name="title" type="text" class="with-error">
+          <span class="error">
+            Your title should only contains, letters, numbers, spaces and can contain one of the following special characters: #$€&*`’-
+          </span>
+          <label for="summary">Summary</label>
+          <textarea name="summary" rows="5" placeholder="This story is about..."></textarea>
+          <label for="genre" class="required">Genre</label>
+          <select name="genre">
+            <option value="classic">Classic</option>
+            <option value="crime">Crime/Detective</option>
+            <option value="fable">Fable</option>
+            <option value="essay">Essay</option>
+          </select>
+        </fieldset>
+        <h3 div class="fieldset-title">Connect {Channel Name} with Facebook</h2>
+        <fieldset>
+          <p>
+            Connecting your Facebook Page will allow you to automatically publish every Snipsl to your Facebook Fans. We will also announce your new Channel to your Facebook Fans after you publish your first Snipsl.
+          </p>
+          <p>
+            You can disable this behaviour before you publish a Snipsl.
+          </p>
+          <p>
+            We are not using your personal profile, you can only connect your Facebook Fanpage.
+          </p>
+          <p>
+            If you don't have a Fanpage yet, you can create one on Facebook:
+            <br />
+            <a href="#">Create a Facebook Fanpage</a>.
+          </p>
+          <div class="checkbox-field">
+            <div class="checkbox-field">
+              <input type="checkbox" id="agreement" name="agreement">
+              <label for="agreement">I hereby agree that Snipsl may publish facebook posts on my behalf.</label>
+            </div>
+          </div>
+        </fieldset>
+        <h3 div class="fieldset-title">Daily Publishing Time</h2>
+        <fieldset>
+          <p> Set the hour when queued Snipsl will be published.</p>
+          <select name="publishing-time">
+            <option value="900">9:00</option>
+            <option value="930">9:30</option>
+            <option value="1000">10:00</option>
+            <option value="1030">10:30</option>
+          </select>
+        </fieldset>
+        <div class="action-container">
+          <a href="home.html" class="secondary-btn">Cancel</a>
+          <button role="button" class="main-btn">Next</button>
+          <input type="submit" name="new-channel" value="Create and write first Snipsl" class="main-btn">
+        </div>
+      </form>
+    </section>

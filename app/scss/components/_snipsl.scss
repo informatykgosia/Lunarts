@@ -1,0 +1,63 @@
+.snipsl-container{
+  max-width: $main-container-width;
+  margin: 0 auto;
+
+  button {
+    margin: 1rem auto;
+  }
+}
+
+.snipsl {
+  @include transition(background, 0.2s, ease);
+  background-color: #eee;
+  padding: 1rem;
+  margin-bottom: 0.3rem;
+
+  .title, time {
+    text-align: center;
+  }
+
+  .title {
+    margin: 0.5rem 0;
+    color: #444;
+  }
+
+  time {
+    display: block;
+    color: #777;
+    font-size: 0.9rem;
+    margin: 0 0 3rem;
+  }
+
+  .publish-date {
+    font-size: 1.1rem;
+  }
+}
+
+.publish-date, .comments-counter {
+  display: block;
+  margin: 0 0 1rem;
+  color: #777;
+  text-align: center;
+}
+
+.snipsl-link {
+  text-decoration: none;
+  display: block;
+  overflow: hidden;
+  color: inherit;
+
+  &:hover, &:focus {
+    outline: 0;
+
+    .snipsl {
+      background-color: pink;
+    }
+  }
+
+  &#active {
+    .snipsl {
+      background-color: pink;
+    }
+  }
+}

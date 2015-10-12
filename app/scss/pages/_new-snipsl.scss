@@ -1,0 +1,152 @@
+.new-snipsl {
+  width: calc(100% - #{$main-nav-collapsed});
+  float: right;
+  height: 100%;
+  background-color: #333;
+  overflow-y: auto;
+
+  @media screen and (min-width: $standard-desktop) {
+    width: calc(100% - #{$main-nav-expanded});
+  }
+
+  .icon {
+    @include transition(all, 0.2s, ease);
+    font-size: 2rem;
+    position: fixed;
+    color: #808080;
+    line-height: 1.5rem;
+
+    &:hover {
+      cursor: pointer;
+      color: #f5f5f5;
+    }
+  }
+
+  .icon-close {
+    right: 2rem;
+    top: 1rem;
+  }
+
+  .icon-expand {
+    top: 1rem;
+    left: $main-nav-collapsed + 1.5rem;
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+
+    @media screen and (min-width: $standard-desktop) {
+      left: $main-nav-expanded + 1.5rem;
+    }
+  }
+
+  .icon-italic, .icon-bold {
+    border: 1px solid #808080;
+    border-radius: 50%;
+    width: 3.5rem;
+    height: 3.5rem;
+    padding: 1rem;
+    text-align: center;
+    left: 50%;
+    margin-left: $main-nav-collapsed + 26rem;
+    font-size: 1.6rem;
+
+    &:hover {
+      border-color: #f5f5f5;
+    }
+
+    @media screen and (min-width: $standard-desktop) {
+      margin-left: $main-nav-expanded + 20rem;
+    }
+  }
+
+  .icon-italic{
+    top: 4rem;
+  }
+
+  .icon-bold{
+    top: 9rem;
+  }
+}
+
+.page {
+  font-family: serif;
+  background-color: white;
+  max-width: $snipsl-page-width;
+  position: relative;
+  min-height: 100%;
+  margin: 0 auto;
+  padding: 4rem 4rem 9rem;
+  font-size: 1.2rem;
+  font-weight: 100;
+
+  .snipsl-title {
+    margin: 0 0 3rem;
+    color: #cacaca;
+    text-align: center;
+    font-weight: 300;
+  }
+
+  .action-container {
+    font-family: sans-serif;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+
+    .main-btn{
+      margin-left: 1rem;
+    }
+  }
+
+  .words-count {
+    color: #cacaca;
+    font-size: .9rem;
+    text-align: center;
+    margin: 0 0 1rem;
+  }
+}
+
+//publish snipsl
+
+.publish-options-form {
+  width: $snipsl-page-width;
+  background-color: white;
+  margin: 0 auto;
+  padding: 2rem 0 0;
+
+  input[type="number"] {
+    width: 6rem;
+  }
+
+  fieldset {
+    padding: 1rem 4rem 2rem;
+  }
+}
+
+.publish-options-view {
+  .icon {
+    display: none;
+  }
+  .page {
+    height: 15rem;
+    min-height: 0;
+    padding: 4rem;
+    background-color: #eee;
+    border-bottom: 1px solid #cacaca;
+  }
+
+  .page-content {
+    position: absolute;
+    bottom: 4rem;
+    color: #cacaca;
+  }
+
+  .snipsl-actions {
+    display: none;
+  }
+
+  .snipsl-publish {
+    position: relative;
+  }
+}

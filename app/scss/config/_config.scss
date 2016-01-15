@@ -4,20 +4,9 @@
   box-sizing: border-box;
 }
 
-html {
-  position: relative;
-  height: 100%;
-  font-size: 14px;
-
-  @media screen and (min-width: $standard-desktop) {
-    font-size: 16px;
-  }
-  @media screen and (min-width: $big-desktop) {
-    font-size: 18px;
-  }
-}
-
 body {
-  overflow-x: hidden;
-  height: 100%;
+  font-family: 'Dosis', sans-serif;
+  font-size: 18px;
+  margin: 0;
+  background: url('../img/ricepaper2.png') repeat;
 }

@@ -4,12 +4,9 @@
 @import "config/mixins";
 @import "global/typography";
 @import "global/grid";
-@import "components/nav";
+@import "components/header";
 @import "components/forms";
 @import "components/buttons";
-@import "components/snipsl";
-@import "pages/login";
+@import "pages/enroll";
 @import "pages/home";
-@import "pages/channel";
-@import "pages/new-snipsl";
-@import "pages/feedback";
+@import "pages/students-list";

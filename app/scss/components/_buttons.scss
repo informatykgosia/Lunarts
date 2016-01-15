@@ -26,94 +26,38 @@
   }
 }
 
-%big-button{
-  font-size: 1.22rem;
-  font-weight: 300;
-}
-
-
-%link-buttonized {
-  background-color: #ccc;
-  text-align: center;
-  text-decoration: none;
-}
-
-input[type="submit"] {
-  @extend %basic-button;
-}
-
-.basic-btn {
-  @extend %basic-button;
-  width: auto;
-}
-
-.shortcut-button {
-  color: #777;
-  text-decoration: none;
+.button {
   display: inline-block;
-  text-align: center;
-
-  &:hover {
-    color: pink;
-  }
-
-  .icon {
-    font-size: 4rem;
-    margin: 1rem 0
-  }
-
-  span {
-    display: block;
-    font-size: 1.3rem;
-  }
-}
-
-.action-container {
-  @extend %clearfix;
+  text-decoration: none;
   padding: 1rem 2rem;
-
-  input[type="submit"]{
-    display: inline-block;
-    width: auto;
-  }
-
-  .secondary-btn {
-    float: left;
-  }
-
-  .main-btn {
-    float: right;
-  }
+  font-size: 1.5rem;
+  border-radius: 0.2rem;
+  min-width: 13rem;
 }
 
-.main-btn, .secondary-btn {
-  @extend %basic-button;
-  @extend %link-buttonized;
-  min-width: 10rem;
-  width: auto;
+.primary {
+  background-color: #00C4FF;
+  border: 1px solid #267CD4;
+  color: white;
+}
+.primary:hover {
+  background-color: #26A6D9;
 }
 
-.expand {
-  border: none;
-  background: none;
-  color: #999;
-  display: block;
-  margin: 3rem auto 0;
-  font-weight: 600;
-
-  &:focus, &:hover {
-    outline: 0;
-    color: pink;
-  }
+.secondary {
+  color: black;
+  background-color: #F3f3f3;
+  border: 1px solid black;
 }
 
-.ghost-button {
-  @extend %reset-button;
-  font-weight: 600;
-  color: #777;
-  margin: 1rem 0 0;
+.secondary:hover {
+  background-color: white;
+}
 
-  &:hover, &:focus {
-    color: pink;
-  }
+.buttons-group {
+  text-align: center;
+}
+
+.buttons-group .primary{
+  margin-right: 2rem;
 }
